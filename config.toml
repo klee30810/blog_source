@@ -1,0 +1,12 @@
+baseURL = "https://klee30810.github.io/"
+languageCode = "ko-kr"
+title = "Kevin's Codex"
+theme = "learn"
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
