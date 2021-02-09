@@ -7,10 +7,18 @@ theme = "learn"
 
 [Params]
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-tags'></i> Tags"
-url = "/tags"
+	[[menu.shortcuts]]
+	name = "<i class='fas fa-tags'></i> Tags"
+	url = "/tags"
 
+# code highlight
+[markup.highlight]
+	codeFences = true
+	guessSyntax = true
+	lineNos = true
+	lineNumbersInTable = true
+	noClasses = true
+	style = "paraiso-dark"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
