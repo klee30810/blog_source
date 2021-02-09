@@ -7,6 +7,12 @@ category: ["Battery"]
 
 # 2차전지 기본개념
 
+adfadf$$a_x b_x$$
+$$
+a_i b_i
+$$
+
+
 # 1. 개요
 
 ---

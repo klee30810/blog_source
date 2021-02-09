@@ -6,6 +6,9 @@ title = "Kevin's Codex"
 theme = "learn"
 
 [Params]
+	
+	# can be "red", "blue", "green"
+	themeVariant = "blue"
 
 	[[menu.shortcuts]]
 	name = "<i class='fas fa-tags'></i> Tags"
