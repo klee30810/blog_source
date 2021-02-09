@@ -37,10 +37,10 @@ katex: true
   - 음극에 금속 리튬 & 전해액에 유기용매
   - 금속 Li는 이온화 경향이 커서 활성화 되어있으므로 물과 반응하면 수소가스를 방출하며 그 자체도 연소성
 - 연료전지 : 화학적으로 에너지를 저장하고 연료를 소모하며 전력 생산
-  - 전해질을 녹임 물로 전류를 흘려보내 $$H_2, O_2$$발생 → 전해질로 사용하는 전극에 $$H_2$$, 산화전극에 $$O_2$$를 보내서 화학반응 유도
+  - 전해질을 녹임 물로 전류를 흘려보내 \\(H_2, O_2\\)발생 → 전해질로 사용하는 전극에 \\(H_2​\\), 산화전극에 \\(O_2\\)를 보내서 화학반응 유도
   - 수소 연료와 산화제 ⇒ 배출열을 이용해 연료의 80%까지 에너지로 변환
 
-![Untitled](images/battery/battery_basics/Untitled.png)
+![Untitled](/images/battery/battery_basics/Untitled.png)
 
 - 태양전지 : 태양 빛에너지 광전효과로 전기 에너지 변환
 - 커패시터 : 충,방전에 따른 성능 저하를 방지하고 이온 분자를 저장할 수 있는 전기 이중 충전지, 쉽게 열화되지 않는다
@@ -51,7 +51,7 @@ katex: true
 
 - 자기방전율 : 방치시 서서히 방전 ⇒ Mg (10) → alkali (5) → Li (2)
 
-* 에너지 밀도 : 스마트폰 → 질량 당 $$\rho$$  /  EV → 체적 당 $$\rho$$
+* 에너지 밀도 : 스마트폰 → 질량 당 \\(\rho\\)  /  EV → 체적 당 \\(\rho\\)
 
 # 2. 2차전지 산업
 
@@ -59,15 +59,15 @@ katex: true
 
 ## (1) 리튬이온전지 개발
 
-![Untitled 1](images/battery/battery_basics/Untitled1.jpg)
+![Untitled 1](/images/battery/battery_basics/Untitled1.jpg)
 
 - 리튬 : 가장 경량 (작은 밀도), 전기 화학반응으로 가장 높은 전압 방출, 메모리 효과 없음 / 반응성이 커서 폭발의 위험 존재
   - 양극집전체 : Al 금속 산화물
-  - 양극 : $$LiCoO_2, LiFePO_4$$
+  - 양극 : \\(LiCoO_2, LiFePO_4\\)
   - 전해액 : 리튬 소금계열
   - 분리막 : 폴리에틸렌, 폴리프로필렌
   - 음극 : 흑연(Graphite)
-  - 음극집전체 : Cu
+  - 음극집전체 : \\(Cu\\)
 - 충전 : Li+ 가 (+) → (-)로 흐름 / 양극 전자와 Li+는 외부 전압으로 인해 음극으로 이동되며 전압차 발생
 - 방전 : 음극의 Li+ 가 (+)로 흐름 / 전위차가 있으므로 도선을 타고 음극 전자가 양극으로 흐름 & 전해액을 통해 Li+가 (+)이동
 - 소형 배터리 : IT제품 + 가전제품 + EV (원형배터리)
@@ -96,7 +96,7 @@ katex: true
 
 ---
 
-![Untitled](images/battery/battery_basics/Untitled2.png)
+![Untitled](/images/battery/battery_basics/Untitled2.png)
 
 ### 1. 양극재
 
@@ -104,7 +104,7 @@ katex: true
 - 배터리의 용량과 전압 결정 ⇒ 배터리 성능 & 특성 결정
 - LCO, NCM, NCA, LMO, LFP
 
-![Untitled](images/battery/battery_basics/Untitled3.png)
+![Untitled](/images/battery/battery_basics/Untitled3.png)
 
 - 가장 원가비중 大,
 - 에너지 밀도를 높이기 위해 니켈금속(충방전시 입자 균열 큼) 함유량 증가 / 안전성 小
@@ -129,9 +129,9 @@ katex: true
 
 ---
 
-![Untitled](images/battery/battery_basics/Untitled4.png)
+![Untitled](/images/battery/battery_basics/Untitled4.png)
 
-![Untitled](images/battery/battery_basics/Untitled5.png)
+![Untitled](/images/battery/battery_basics/Untitled5.png)
 
 ## (1) 기초
 
@@ -148,7 +148,7 @@ katex: true
   - 충전 시 Li+는 (-)에 있고 도선시 자연스럽게 방전
   - 흑연 : 안정적, 반응성 낮음, Li+ 저장량 大
 - 전해액 : Li+의 이동통로, 전도가 높은 유기물 사용 (극성 有)
-  - 이온 전도도 高 & 전극에 대한 안전성 & 온도 범위(20~60$$^oC$$) & 연소안전성
+  - 이온 전도도 高 & 전극에 대한 안전성 & 온도 범위(20~60\\(^oC\) & 연소안전성
   - 염(Li+ 이동 통로) + 용매 (염을 용해) + 첨가제
 - 분리막 : 양극 활물질 접촉 제한 & Li+ 이동통로
   - 온도 상승시 접촉을 막는 열적 수축 특성 필요 → PE, PP
@@ -175,7 +175,7 @@ katex: true
 
 ### 1) 셀/모듈/팩
 
-![Untitled](images/battery/battery_basics/Untitled6.png)
+![Untitled](/images/battery/battery_basics/Untitled6.png)
 
 - 셀: 기본 최소 단위
 - 모듈 : 셀이 모인 플랫폼
@@ -193,13 +193,13 @@ katex: true
 
 ### 1) 저온 & 고온
 
-- 저온 : 용량 감소 (IT : $$-10^oC$$, EV: $$-30^oC$$) → 전해액의 mobility 감소 → 내부저항 증가
+- 저온 : 용량 감소 (IT : \\(-10^oC\\), EV: \\(-30^oC\\) → 전해액의 mobility 감소 → 내부저항 증가
 - 고온 : 용량 감소 → 전해액의 부피 팽창으로 mobility 증가 상쇄
 
 ### 2) 수명특성
 
 - 특정 용량까지 도달하는데 전지가 충방전을 얼마나 많이 할 수 있는 지횟수
-- 사이클 특성 : 충방전 회숫 → 충방전 조건의 병기 必
+- 사이클 특성 : 충방전 회수 → 충방전 조건의 병기 必
   - 급속한 경우 : 리튬금속 설축 or 전극판의 균일성 무너뜨림
 - 율속(C-rate) : 전지 충방전시의 속도, 충방전시의 방전 전류의 변화
   - 1.0C 충전 : 전지 만충까지 1시간 충전 / 0.5C 방전 : 100% 용량을 30분반에 방전
