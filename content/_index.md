@@ -3,7 +3,7 @@ title: "Content"
 date: 2021-02-08T23:39:19+09:00
 draft: false
 ---
-![davinciCodex](../static/images/davinci_codex.jpg)
+![davinciCodex](images/davinci_codex.jpg)
 
 - Davinci Codex taken in Davince Museum in Popolo Square, Rome, Italy
 
