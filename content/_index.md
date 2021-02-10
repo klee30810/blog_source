@@ -17,5 +17,5 @@ draft: false
 
 - 제가 배우는 모든 것에 대한 지식의 **영속성**을 위하여 기록으로 남깁니다!
 
-Details about the author is in [kmlee.xyz](kmlee.xyz)
+Details about the author is in [kmlee.xyz](https://kmlee.xyz)
 
