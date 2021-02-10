@@ -64,17 +64,34 @@ theme = "learn"
   # can be "red", "blue", "green"
   themeVariant = "blue"
 
-[menu]
-[[menu.main]]
-  identifier = "Paper Review"
-  name = "Paper Review from diverse fields"
-  pre = "<i class='fa fa-book'></i> "
-  url = "paper_review"
-  weight = 10
+  # Analytic section
+  google_analytics_id = ""         # google tracking id
+  tag_manager_container_id = ""    # tag manager container id
+  google_site_verification = ""    # google site verification for search contole
 
-[[menu.shortcuts]]
-  name = "<i class='fas fa-tags'></i> Tags"
-  url = "/tags"
+  menu_style = "open-menu" # 'open-menu' or 'slide-menu'
+  menu_exclusion = [
+	"archives",
+	"archive",
+	"blog",
+	"entry",
+	"post",
+	"posts"
+  ]
+
+# Global menu section
+# https://gohugo.io/content-management/menus/
+[menu]
+  [[menu.main]]
+    identifier = "Paper Review"
+    name = "Paper Review from diverse fields"
+    pre = "<i class='fa fa-book'></i> "
+    url = "paper_review"
+    weight = 10
+
+  [[menu.shortcuts]]
+    name = "<i class='fas fa-tags'></i> Tags"
+    url = "/tags"
 
 # code highlight
 [markup.highlight]
