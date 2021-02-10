@@ -64,6 +64,14 @@ theme = "learn"
   # can be "red", "blue", "green"
   themeVariant = "blue"
 
+[menu]
+[[menu.main]]
+  identifier = "Paper Review"
+  name = "Paper Review from diverse fields"
+  pre = "<i class='fa fa-book'></i> "
+  url = "paper_review"
+  weight = 10
+
 [[menu.shortcuts]]
   name = "<i class='fas fa-tags'></i> Tags"
   url = "/tags"
