@@ -4,7 +4,7 @@ date: 2021-02-11T05:35:32+09:00
 draft: false
 katex: true
 markup: mmark
-tags: ["battery"]
+tags: ["battery", "overview"]
 ---
 
 - Author : Kyungmin Lee

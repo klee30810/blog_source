@@ -7,16 +7,16 @@ markup: mmark
 ---
 ### Battery
 {{< table "table table-striped" >}}
-| Title  | Sounds | Thesis |
+| Title  | Tags | Thesis |
 |:---------:|:--------:|:--------:|
-| Cat       | Meow     |          |
+| The Li-Ion Rechargeable Battery: A Perspective       | overview     |Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.          |
 | Dog       | Woof     |          |
 | Cricket   | Chirp    |          |
 {{</ table >}}
 
 ### Machine Learning & Deep Learning
 {{< table "table table-striped" >}}
-| Title  | Sounds | Thesis |
+| Title  | Tags | Thesis |
 |:---------:|:--------:|:--------:|
 | Cat       | Meow     |          |
 | Dog       | Woof     |          |
