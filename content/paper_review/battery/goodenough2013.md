@@ -1,11 +1,15 @@
 ---
 title: "The Li-Ion Rechargeable Battery: A Perspective"
+menuTitle: "LIB Perspective"
 date: 2021-02-11T05:35:32+09:00
 draft: false
 katex: true
 markup: mmark
 tags: ["battery", "overview"]
 ---
+
+## The Li-Ion Rechargeable Battery: A Perspective
+
 
 - Author : Kyungmin Lee
 - Thesis : Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.

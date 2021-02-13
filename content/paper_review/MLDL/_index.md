@@ -1,5 +1,6 @@
 ---
 title: "Machine Learning & Deep Learning"
+menuTitle : ML & DL
 date: 2021-02-11T14:06:03+09:00
 draft: false
 katex: true

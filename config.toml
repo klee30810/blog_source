@@ -4,6 +4,7 @@ languageCode = "ko-kr"
 DefaultContentLanguage = "ko"
 title = "Kevin's Codex"
 theme = "learn"
+googleAnalytics = "G-CV2G2QZED6"
 
 [Params]
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
@@ -87,20 +88,24 @@ theme = "learn"
     name = "Paper Review from diverse fields"
     pre = "<i class='fa fa-book'></i> "
     url = "/paper_review/"
-    weight = 10
+    weight = -110
 
   [[menu.main]]
     identifier = "Paper Review"
     name = "Paper Review from diverse fields"
     pre = "<i class='fa fa-book'></i> "
     url = "paper_review"
-    weight = 10
+    weight = -100
 
 
 
   [[menu.shortcuts]]
     name = "<i class='fas fa-tags'></i> Tags"
     url = "/tags"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 # code highlight
 [markup.highlight]
