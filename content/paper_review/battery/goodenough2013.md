@@ -11,7 +11,7 @@ tags: ["battery", "overview"]
 - Thesis : Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.
 - Citation : Goodenough, J. B., & Park, K. S. (2013). The Li-ion rechargeable battery: a perspective. *Journal of the American Chemical Society*, *135*(4), 1167-1176.
 
-#### 
+
 
 ### Abstract
 
