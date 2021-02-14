@@ -8,7 +8,7 @@ pre = "<b>2. </b>"
 
 +++
 
-### Chapter 2
+### Review 2
 
 # Machine Learning & Deep Learning 
 
