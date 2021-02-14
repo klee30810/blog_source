@@ -10,6 +10,6 @@ pre: "<b>6. </b>"
 
 ### Chapter 6
 
-# Battery Studies
+# Battery
 
 Battery Studies in diverse field

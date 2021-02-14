@@ -1,6 +1,6 @@
 +++
 title = "Machine Learning & Deep Learning Paper Review"
-menuTitle = "MLDL"
+menuTitle = "ML & DL"
 date = 2021-02-14T21:02:41+09:00
 weight = 2
 chapter = true

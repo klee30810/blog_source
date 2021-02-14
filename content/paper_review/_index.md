@@ -11,7 +11,7 @@ pre: "<b> 1. </b>"
 {{< table "table table-striped" >}}
 | Title  | Tags | Thesis |
 |:---------:|:--------:|:--------:|
-| The Li-Ion Rechargeable Battery: A Perspective       | overview     |Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.          |
+| [The Li-Ion Rechargeable Battery: A Perspective](/battery/goodenough2013.md)       | overview     |Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.          |
 | Dog       | Woof     |          |
 | Cricket   | Chirp    |          |
 {{</ table >}}

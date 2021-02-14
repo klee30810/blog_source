@@ -1,6 +1,6 @@
 +++
 title = "Electrical & Electronic Studies"
-menuTitle = "Elec. Study."
+menuTitle = "Electrical Eng."
 date = 2021-02-14T20:40:27+09:00
 weight = 3
 chapter = true
