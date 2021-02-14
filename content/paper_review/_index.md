@@ -11,7 +11,7 @@ pre: "<b> 1. </b>"
 {{< table "table table-striped" >}}
 | Title  | Tags | Thesis |
 |:---------:|:--------:|:--------:|
-| [The Li-Ion Rechargeable Battery: A Perspective](/paper_review/battery/goodenough2013.md)       | overview     |Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.          |
+| [The Li-Ion Rechargeable Battery: A Perspective](/paper_review/battery/goodenough2013)       | overview     |Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.          |
 ### Machine Learning & Deep Learning Paper Review
 | Dog       | Woof     |          |
 | Cricket   | Chirp    |          |
