@@ -2,9 +2,14 @@
 title: "Battery"
 date: 2021-02-11T05:35:22+09:00
 draft: false
+chapter: true
+weight: 1
+pre: "<b>1. </b>"
 katex: true
 markup: mmark
 ---
-## Battery Paper Review
+### Review 1
+
+# Battery Paper Review
 
 - The Li-Ion Rechargeable Battery: A Perspective, John B. Goodenough

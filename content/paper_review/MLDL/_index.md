@@ -1,9 +1,16 @@
----
-title: "Machine Learning & Deep Learning"
-menuTitle : ML & DL
-date: 2021-02-11T14:06:03+09:00
-draft: false
-katex: true
-markup: mmark
----
-### Machine Learning & Deep Learning Paper Review
++++
+title = "Machine Learning & Deep Learning Paper Review"
+menuTitle = "MLDL"
+date = 2021-02-14T21:02:41+09:00
+weight = 2
+chapter = true
+pre = "<b>2. </b>"
+
++++
+
+### Chapter 2
+
+# Machine Learning & Deep Learning 
+
+Machine Learning & Deep Learning Paper Review
+

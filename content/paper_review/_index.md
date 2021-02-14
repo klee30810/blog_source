@@ -2,8 +2,10 @@
 title: "Paper Review"
 date: 2021-02-10T11:28:28+09:00
 draft: false
+weight: 1
 katex: true
 markup: mmark
+pre: "<b> 1. </b>"
 ---
 ### Battery
 {{< table "table table-striped" >}}
