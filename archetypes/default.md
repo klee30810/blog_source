@@ -1,8 +1,9 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 menuTitle : ""
+weight: 1111
 date: {{ .Date }}
-draft: false
+draft: true
 katex: true
 markup: mmark
 tags: []
