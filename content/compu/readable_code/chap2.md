@@ -7,6 +7,8 @@ weight: 2
 katex: true
 markup: mmark
 tags: ["programming"]
+hidden: "true"
+
 
 LastModifierDisplayName : "Kevin Lee"
 LastModifierEmail : "klee30810@gmail.com"

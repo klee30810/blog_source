@@ -1,6 +1,6 @@
 +++
-title = "Compu"
-menuTitle = "Comp. Sci."
+title = "Computer Science"
+menuTitle = "Computer Sci."
 date = 2021-02-14T20:40:39+09:00
 weight = 4
 chapter = true

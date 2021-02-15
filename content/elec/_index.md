@@ -14,5 +14,5 @@ pre = "<b>3. </b>"
 # Electrical & Electronic Engineering
 
 Electrical & Electronic Engineering Studies
-
+{{% children description="true" depth="3" showhidden="true" %}}
 

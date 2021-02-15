@@ -6,7 +6,6 @@ weight = 1000
 chapter = true
 pre = "<b>X. </b>"
 
-
 +++
 
 ### Chapter X
@@ -15,3 +14,4 @@ pre = "<b>X. </b>"
 
 Lorem Ipsum.
 
+{{% children depth="10" showhidden="true" %}}

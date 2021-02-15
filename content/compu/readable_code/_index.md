@@ -15,5 +15,7 @@ pre = "<b>1. </b>"
 
 Readable Code Book Review
 
+{{% children depth="3" showhidden="true" %}}
+
 - The Art of Readable Code, written by Dustin Boswell et al.
 
