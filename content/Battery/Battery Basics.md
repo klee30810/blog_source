@@ -4,6 +4,8 @@ date: 2021-02-09T21:14:47+09:00
 draft: false
 category: ["Battery"]
 katex: true
+weight: 1
+pre: <b>1. </b> 
 ---
 
 # 2차전지 기본개념

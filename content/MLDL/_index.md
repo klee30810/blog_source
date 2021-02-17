@@ -13,4 +13,4 @@ pre = "<b>5. </b>"
 # Machine Learning & Deep Learning
 
 Machine Learning & Deep Learning Studies
-{{% children description="true" depth="3" showhidden="true" %}}
+{{% children depth="3" showhidden="true" %}}
