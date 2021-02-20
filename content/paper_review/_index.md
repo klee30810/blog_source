@@ -12,8 +12,7 @@ pre: "<b> 1. </b>"
 | Title  | Tags | Thesis |
 |:---------:|:--------:|:--------:|
 | [The Li-Ion Rechargeable Battery: A Perspective](/paper_review/battery/goodenough2013)       | overview     |Li-Ion Battery is hot trend of technology with its cathode, anode, electrolyte, and separation membrane.          |
-### Machine Learning & Deep Learning Paper Review
-| Dog       | Woof     |          |
+| [Li-ion battery materials: present & future](/paper_review/battery/nitta2015)      | overview     |Li-Ion Battery material's characteristics & cost + abundance added.          |
 | Cricket   | Chirp    |          |
 {{</ table >}}
 
