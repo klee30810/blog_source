@@ -12,4 +12,6 @@ markup: mmark
 
 # Battery Paper Review
 
-- The Li-Ion Rechargeable Battery: A Perspective, John B. Goodenough
+- The Li-Ion Rechargeable Battery: A Perspective, John B. Goodenough et al.
+- Li-ion Battery Materials: Present & Future, Naoki Nitta et al.
+

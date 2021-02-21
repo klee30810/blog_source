@@ -6,6 +6,7 @@ draft: false
 katex: true
 markup: mmark
 tags: ["battery", "overview"]
+hidden: "true"
 ---
 
 ## The Li-Ion Rechargeable Battery: A Perspective
