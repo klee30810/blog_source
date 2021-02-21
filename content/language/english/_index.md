@@ -1,17 +1,17 @@
 +++
 title = "English"
-menuTitle = "menu title"
+menuTitle = "English"
 date = 2021-02-14T22:34:51+09:00
-weight = 1000
+weight = 1
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>1. </b>"
 
 
 +++
 
-### Chapter X
+### Chapter 1
 
-# Some Chapter title
+# English Study
 
-Lorem Ipsum.
+English Study
 
