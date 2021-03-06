@@ -1,7 +1,7 @@
 ---
-title: "Chap3. 리튬 이차전지용 주요 소재"
-description: "리튬 이차전지 소재 소개"
-menuTitle : "LIB의 소재"
+title: "Chap3-1. 리튬 이차전지용 주요 소재 - 양극 활물질"
+description: "리튬 이차전지 - 양극 활물질"
+menuTitle : "LIB의 소재 - CAM"
 weight: 3
 date: 2021-02-17T20:31:29+09:00
 draft: false
