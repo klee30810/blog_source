@@ -14,4 +14,4 @@ pre = "<b>X. </b>"
 
 Lorem Ipsum.
 
-{{% children depth="10" showhidden="true" %}}
+{{% children depth="1" showhidden="true" %}}

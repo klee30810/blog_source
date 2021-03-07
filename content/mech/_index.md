@@ -12,4 +12,4 @@ pre = "<b>2. </b>"
 # Mechanical Engineering
 
 Mechanical Engineering Studies
-{{% children  depth="3" showhidden="true" %}}
+{{% children depth="1" showhidden="true" %}}
