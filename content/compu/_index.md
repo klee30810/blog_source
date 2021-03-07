@@ -13,5 +13,5 @@ pre = "<b>4. </b>"
 # Computer Science
 
 Computer Science Studies
-{{{% children depth="3" showhidden="true" %}}
+{{% children depth="1" showhidden="true" %}}
 
