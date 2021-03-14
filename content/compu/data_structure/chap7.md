@@ -198,3 +198,9 @@ Data Dequeue(Queue * pq)
 ---
 
 - Double ended queue : 양쪽 방향으로 모두 입출력이 가능 & 스택과 큐의 형태를 모두 사용할 수 있음
+  - 모든 연산이 pair를 이루는 것이 아니라 개별적으로 연산 가능
+
+![image](/images/compu/DS/chap7/2.png)
+
+- Deque의 구현에 가장 잘 어울리는 자료구조는 양방향 연결 리스트이다. 앞과 뒤로 입출력 연산이 이뤄지기 떄문에 **head뿐만 아니라 tail도 정의되어야** 한다.
+- 
