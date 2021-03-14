@@ -1,10 +1,10 @@
 ---
-title: "Chap3"
+title: "Chap3. 전기와 자기"
 description: ""
 menuTitle : ""
-weight: 1111
+weight: 3
 date: 2021-02-17T02:04:01+09:00
-draft: true
+draft: false
 katex: true
 markup: mmark
 tags: []
