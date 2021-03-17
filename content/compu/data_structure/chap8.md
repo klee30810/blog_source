@@ -183,9 +183,150 @@ void InorderTraverse(BTreeNode * bt)
   printf("%d \n", bt->data); // root
   InorderTraverse(bt->right);
 }
+
+// 전위 순회
+void PreorderTraverse(BTreeNode * bt)
+{
+  if(bt==NULL)		
+    return;
+  
+  printf("%d \n", bt->data); // root
+  InorderTraverse(bt->left);
+  InorderTraverse(bt->right);
+}
+
+// 후위 순회
+void PostorderTraverse(BTreeNode * bt)
+{
+  if(bt==NULL)		
+    return;
+  
+  InorderTraverse(bt->left);
+  InorderTraverse(bt->right);
+  printf("%d \n", bt->data); // root
+}
+
+
 ```
 
 
+
+- 함수 포인터를 이용한 노드의 방문이유 구성하기
+
+```c
+// 함수 포인터 형 정의
+typedef void VisitFuncPtr(BTData data) // (* VisitFuncPtr 가능)
+  
+void InorderTraverse(BTreeNode * bt, VisitFuncPtr action)
+{
+  if(bt == NULL)
+    return;
+  
+  InorderTraverse(bt->left, action);
+  action(bt->data);    // 노드의 방문
+  InorderTraverse(bt->right, action);
+}
+
+void ShowIntData(int data) // BTData가 int 가정
+{
+  printf("%d ", data);
+  // 목적을 사용자가 직접 정의하는 부분
+}
+```
+
+
+
+### 4. 수식 트리 (Expression Tree)의 구현
+
+---
+
+- 수식 트리의 이해 : 중위 표기법의 수식을 수식 트리로 변환하는 프로그램의 작성이 목적!
+  - 중위 표기법 수식은 사람이 인식하기 좋은 수식이나 컴퓨터는 인식이 어렵다.
+  - 수식 트리는 해석이 쉽다.
+  - 연산자 우선순위를 고려하지 않아도 되고, In & Post & Pre로 면환이 쉽다. 
+
+중위 표기법 수식 → 후위 표기법 수식 → 수식 트리
+
+```c
+#include "BinaryTree2.h"
+
+BTreeNode * MakeExpTree(char exp[]); 	// 수식 트리 구성
+// 후위 표기법의 수식을 인자로 받아서 수식 트리를 구성하고 루트 노드의 주소 값을 반환한다.
+
+int EvaluateExpTree(BTreeNode * bt);	// 수식 트리 계산
+
+void ShowPrefixTypeExp(BTreeNode * bt);	// 전위 표기법 기반 출력
+void ShowInfixTypeExp(BTreeNode * bt);	// 중위 표기법 기반 출력
+void ShowPostfixTypeExp(BTreeNode * bt);	// 후위 표기법 기반 출력
+```
+
+- 후위 표기법의 수식에서 먼저 등장하는 피연산자와 연산자를 이용해서 트리의 하단부터 구성해 나가고 이어서 윗부분을 구성해나간다.
+- 차례차례 스택을 쌓는다. 서브트리가 있다면 스택에 그대로 쌓으면 된다. → 루트 노드가 쌓이면 그 자체로 서브트리로 인식
+
+```c
+BTreeNode * MakeExpTree(char exp[])
+{
+  /*
+  - 피연산자는 스택으로 옮긴다.
+  - 연산자를 만나면 스택에서 두 개의 피연산자 꺼내 자식노드로 연결
+  - 자식 노드를 연결해서 만들어진 트리는 다시 스택으로 옮긴다.
+  - 완성 결과를 스택에 저장하고, 수식트리의 root node 주소값을 반환한다.
+  */
+  Stack stack;
+  BTreeNode * pnode;
+  int expLen = strlen(exp);
+  int i;
+  
+  for(i=0; i<expLen; i++)
+  {
+    pnode = MakeBTreeNode();
+    if(isdigit(exp[i]))					// 피연산자라면
+    {
+      SetData(pnode, exp[i]-'0');  // 문자를 정수로 변경
+    }
+    else	// 연산자라면
+    {
+      MakeRightSubTree(pnode, SPop(&stack));
+      MakeLeftSubTree(pnode, SPop(&stack));
+      SetData(pnode, exp[i]);
+    }
+    SPush(&stack, pnode);
+  }
+  
+  return SPop(&stack);
+}
+
+// 계산 기본구성
+int EvaluateExpTree(BTreeNode * bt)
+{
+  int op1, op2;
+  
+  // 단말노드라면 바로 탈출
+  if(GetLeftSubTree(bt)==NULL && GetRightSubTree(bt)==NULL)
+    return GetData(bt);
+  
+  // SubTree 도 올 수 있으므로 재귀적 표현 필요!
+  op1 = EvaluateExpTree((GetLeftSubTree(bt)));
+  op2 = EvaluateExpTree((GetRightSubTree(bt)));
+  
+  switch(GetData(bt))
+  {
+    case '+':
+      return op1+op2;
+    
+    case '-':
+      return op1-op2;
+
+    case '*':
+      return op1*op2;
+
+    case '/':
+      return op1/op2;
+  }
+
+  return 0;
+}
+```
 
 
 
