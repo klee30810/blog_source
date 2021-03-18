@@ -2,7 +2,7 @@
 title: "Chap4"
 description: ""
 menuTitle : ""
-weight: 1111
+weight: 4
 date: 2021-03-15T11:16:01+09:00
 draft: true
 katex: true

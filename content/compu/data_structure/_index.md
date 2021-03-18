@@ -1,5 +1,5 @@
 +++
-title = "Data_structure"
+title = "Data Structure"
 menuTitle = "Data Structure "
 date = 2021-03-07T14:34:26+09:00
 weight = 2

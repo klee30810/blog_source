@@ -1,5 +1,5 @@
 +++
-title = "MathML"
+title = "Mathematics for Machine Learning"
 menuTitle = "Math for ML"
 date = 2021-03-15T11:12:12+09:00
 weight = 1
