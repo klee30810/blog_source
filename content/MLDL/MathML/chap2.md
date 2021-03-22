@@ -128,6 +128,45 @@ $$I_n=\begin{bmatrix}1 & 0 & ... & 0 \\0 & 1 & ... & 0\\...&...&...&...  \\ 0 & 
 
 #### 2.3.1 Particular and General Solution
 
+- paricular solution : a vector that satisfies Ax=b whether the solution is unique
+- general solution : all solutions of the equation system
+
+> The general approach
+>
+> 1. Find a particular solution to \\(Ax=b\\)
+> 2. Find all solutions to \\(Ax=0\\)
+> 3. Combine the solutions from steps 1. and 2. to the general solution
+
+- neither the general nor the particular solution is unique
+
+#### 2.3.2 Elementry Transformations
+
+- keep the solution set the same, but that transform the equation system into a simpler form
+
+> - Exchange of two equations (rows in the matrix representing the system of equations)
+> - Multiplication of an equation (row) with a constant \\(λ \in\R\{0}\\)
+> - Addition of two equations (rows)
+
+- augmented matrix : \\([A|b]\\)
+
+- pivot : the leading coefficient of a row (first nonzero number from the left)
+
+  ⇒ always strictly to the right of the pivot of the row above → any equation system in row-echelon form always has a “staircase” structure
+
+> < row-echelon form >
+>
+> - All rows that contain only zeros are at the bottom of the matrix; correspondingly, all rows that contain at least one nonzero element are on top of rows that contain only zeros.
+> - Looking at nonzero rows only, the first nonzero number from the left(*pivot* or the leading coefficient) is always strictly to the right of the pivot of the row above it.
+
+- basic variables : variables coresponding to the pivots in the row-echolon form / others: free variables
+- Reduced Row Echelon Form
+  - It is in row-echelon form
+  - Every pivot is 1.
+  - The pivot is the only nonzero entry in its column.
+- Gaussian elimination is an algorithm that performs elementary transformations to bring a system of linear equations into reduced row-echelon form.
+
+#### 2.3.3 Calculating the Inverse
+
 - 
 
 
