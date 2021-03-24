@@ -167,9 +167,46 @@ $$I_n=\begin{bmatrix}1 & 0 & ... & 0 \\0 & 1 & ... & 0\\...&...&...&...  \\ 0 & 
 
 #### 2.3.3 Calculating the Inverse
 
+- Need to find a matrix X that satisfies \\(AX=I_n\\), then \\(X=A^{-1}\\)
+- Use augmented matrix notation
+
+$$[A|I_n]\rightarrow[I_n|A^{-1}] $$
+
+→ Determining the inverse of a matrix is equivalent to solving systems of linear equations
+
+##### 2.3.4 Algorithms for Solving a System of Linear Equations
+
+- Assume that a solution exists, and it is able to determine the inverse \\(A^{-1}\\) → only possible **when A is a square matrix and invertible**
+
+- Otherwise, under mild assumptions ( A needs to have linearly independent columns)...
+
+  $$Ax=b \rightarrow A^TAx=A^Tb\rightarrow x=(A^TA)^{-1}A^Tb $$
+
+  → and use the *Moore-Penrose pseudo-inverse* \\((A^T A)^{-1} A^T\\) ⇒ **minimum norm least-squares solution**.
+
+  - It requires many computations for the matrix-matrix product & computing the inverse of \\(A^T A\\)
+
+- Gaussian elimination plays an important role when computing determinants, checking whether a set of vectors is linearly independent, computing the inverse of a matrix, computing the rank of a matrix, and determining a basis of a vector space.
+  - it is impractical as the required number of arithmetic operations scales cubically in the number of  simultaneous equations.
+
+- In practice, systems of many linear equations are solved indirectly, by iterative methods.
+
+  
+
+### 2.4 Vector Spaces
+
+---
+
+##### 2.4.1 Groups
+
+> Group : Consider a set \\(G\\) and an operation : \\(\otimes: G \times G \rightarrow G\\) defined on \\(G\\). Then \\(G:=(G,\otimes )\\) is called a *group* if the following hold:
+>
+> 1. *Closure* of \\(G\\) under \\(\otimes: \forall x, y \in G : x \otimes y \in G\\)
+> 2. *Associativity* : \\(\forall x,y,z \in G : (x \otimes y) \otimes z = x \otimes (y \otimes z)\\)
+> 3. *Neutral element* : \\(\exist e \in G,\ \forall x \in G : x \otimes e = x\ and\ e \otimes x = x\\)
+> 4. Inverse element : \\(\forall x \in G,\ \exist y \in G : x\otimes y = e\ and\ y \otimes x = e\\) where e is the neural element. We often write \\(x^{-1}\\) to denote the inverse element of x.
+
 - 
-
-
 
 
 
