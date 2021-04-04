@@ -14,4 +14,4 @@ pre = "<b>2. </b>"
 Principles & Applications of Lithium Secondary Batteries Review
 Referenced from "리튬이차전지의 원리 및 응용" by 박정기
 
-{{% children depth="10" showhidden="true" %}}
+{{% children depth="1" showhidden="true" %}}

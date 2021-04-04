@@ -13,5 +13,5 @@ pre: "<b>6. </b>"
 # Battery
 
 Battery Studies in diverse field
-{{% children depth="2" showhidden="true" %}}
+{{% children depth="1" showhidden="true" %}}
 
