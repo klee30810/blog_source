@@ -1,5 +1,5 @@
 ---
-title: "Chap13. Table & Hash*"
+title: "Chap13. Table & Hash"
 description: "Table & Hash"
 menuTitle : "Table & Hash"
 weight: 13

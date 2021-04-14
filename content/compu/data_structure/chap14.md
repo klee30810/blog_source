@@ -323,6 +323,262 @@ void DFShowGraphVertex(ALGraph * pg, int startV)
 
 - 방문 정보 기록을 위한 배열 선언
 - 방문 차례 기록을 위한 Queue 선언
+- 가까운 것 중 누구에게 먼저 가는지는 그렇게 중요하지 않으며 대상의 정보를 큐에 저장
+- 큐에 꺼내어 방문을 진행하고, 방문한 정점의 정보를 다시 큐에 넣는 일련의 과정을 *큐가 빌 때까지* 반복
+
+```c
+// ALGraphBFS.h
+enum {A,B,C,D,E,F,G,H,I,H};
+
+typedef struct _ual
+{
+  int numV;
+  int numE;
+  List * adjList;
+  int * visitInfo;
+} ALGraph;
+
+void GraphInit(ALGraph * pg, int nv);
+void GraphDestory(ALGraph * pg);
+void AddEdge(ALGraph * pg, int fromV, int toV);
+void ShowGraphEdgeInfo(ALGraph * pg);
+void BFShowGraphVertex(ALGraph * pg, int startV);
+```
+
+```c
+void BFShowGraphVertex(ALGraph * pg, int startV)
+{
+  Queue queue;
+  int visitV = startV;
+  int nextV;
+  
+  QueueInit(&queue);
+  VisitVertex(pg, visitV);
+  
+  while(LFirst(&(pg->adjList[visitV]), &nextV) == TRUE)
+  {
+    if(VisitVertex(pg, nextV) == TRUE)
+      Enqueue(&queue, nextV);
+    
+    while(LNext(&(pg->adjList[visitV]), &nextV) == TRUE)
+    {
+      if(VisitVertex(pg, nextV) == TRUE)
+        Enqueue(&queue, nextV);
+    }
+    
+    if(QIsEmpty(&queue) == TRUE)
+      break;	// 큐가 비면 탈출조건 성립
+    else
+      visitV = Dequeue(&queue);
+  }
+  memset(pg->visitInfo, 0, sizeof(int)*pg->numV);
+}
+```
+
+
+
+### 14.4 최소 비용 신장 트리
+
+---
+
+- 단순경로 : 중복된 간선을 포함하지 않는 경로
+- 사이클 : 시작점과 끝점이 같은 단순 경로(폐공간)
+- 신장 트리 : 어떻게 경로를 구성하더라도 '사이클'을 형성하지 않는 그래프
+  - 그래프의 모든 정점이 간선에 의해서 하나로 연결되어 있다.
+  - 그래프 내에서 사이클을 형성하지 않는다.
+
+##### 크루스칼 알고리즘
+
+- 가중치를 기준으로 간선을 정렬한 후에 MST가 될때 까지 간선을 하나씩 선택 또는 삭제해나가는 과정
+  - 간선을 다 지우고 가중치가 낮은 것부터 추가 + 사이클 형성 간선은 건너뜀
+  - 최소 비용 신장 트리의 조건인 **간선의 수 + 1 = 정점의 수** 만족시 최소 비용 신장 트리 형성 완료
+- 높은 가중치의 간선을 하나씩 빼는 방식
+  -  독립정점을 만들지 않고 신장 트리 조건을 항상 확인
+  - 최소 비용 신장 트리의 조건인 **간선의 수 + 1 = 정점의 수** 만족시 최소 비용 신장 트리 형성 완료
+
+##### 구현
+
+- 가중치를 기준으로 간선을 내림차순으로 정렬한 다음 높은 가중치의 간선부터 시작해서 하나씩 그래프에서 제거하는 방식
+- "이 간선을 삭제한 후에도 이 간선에 의해 연결된 두 정점을 연결하는 경로가 있는가?" → DFShowGraphVertex 함수 확장
+- "그래프를 구성하는 간선들을 가중치를 기준으로 정렬할 수 있어야 함" → 우선순위 큐 활용
+
+```c
+// header
+enum {A,B,C,D,E,F,G,H,I,j}
+
+typedef struct _ual
+{
+  int numV;
+  int numE;
+  List * adjList;
+  int * visitInfo;
+  PQueue pqueue;		// 간선의 가중치 정보 저장
+} ALGraph;
+
+void GraphInit(ALGraph * pg, int nv);
+void GraphDestory(ALGraph * pg);
+void AddEdge(ALGraph * pg, int fromV, int toV, int weight);
+void ShowGraphEdgeInfo(ALGraph * pg);
+void DFShowGraphVertex(ALGraph * pg, int startV);
+void ConKruskalMST(ALGraph * pg);		// 최소 비용 신장 트리의 구성
+void ShowGraphEdgeWeightInfo(ALGraph * pg);		// 가중치 정보 출력
+```
+
+
+
+```c
+int PQWeightComp(Edge d1, Edge d2)
+{
+  return d1.weight - d2.weight;
+} // 가중치 기준 내림차순으로 간선 정보 꺼내기 위한 정의
+
+void GraphInit(ALGraph * pg, int nv)
+{
+  ....
+   
+  // 우선순위 큐 초기화
+  PQueueInit(&(pg->pqueue), PQWeightComp);
+}
+
+void AddEdge(ALGraph * pg, int fromV, int toV, int weight)
+{
+  Edge edge = {fromV, toV, weight};		// 간선 가중치 정보 담음
+  LInsert(&(pg->adjList[fromV]), toV);
+  LInsert(&(pg->adjList[toV]), fromV);
+  pg->numE += 1;
+  
+  // 간선의 가중치 정보 우선순위 큐에 저장
+  PEnqueue(&(pq->pqueue), edge);
+}
+
+void ConKruskalMST(ALGraph * pg)	// 크루스칼 알고리즘 기반 MST 구성
+{
+  Edge recvEdge[20];		// 복원 간선 정보 저장
+  Edge edge;
+  int eidx=0, i;
+  
+  // MST 형성할 때까지 while문 반복
+  while(pg->numE+1 > pg->numV)		// MST 간선의 수 + 1 == 정점의 수
+  {
+    edge = PDequeue(&(pg->pqueue));	// 가중치 순으로 간선 정보 획득
+    RemoveEdge(pg, edge.v1, edge.v2);	// 획득한 정보의 간선 실제 삭제
+    
+    if(!IsConnVertex(pg, edge.v1, edge.v2))		// 삭제 후 두 정점 연결경로 있는지 확인 ("삭제 해도 연결 되는가?")
+    {
+      RecoverEdge(pg, edge.v1, edge.v2, edge.weight);	// 연결 경로 없으면 간선 복원
+      recvEdge[eidx++] = edge;
+    }
+  }
+  
+  // 우선순위 큐에서 삭제된 간선의 정보를 회복
+  for(i=0; i<eidx; i++)
+    PEnqueue(&(pg->pqueue), recvEdge[i]);
+}
+
+```
+
+```c
+// 간선의 소멸
+void RemoveEdge(ALGraph * pg, int fromV, int toV)
+{
+  RemoveWayEdge(pg, fromV, toV);
+  RemoveWayEdge(pg, toV, fromV);
+  (pg->numE)--;
+}  // 인접 리스트 기반 무방향 그래프인 관계로 하나의 간선을 완전히 소멸하기 위해서는 두 개의 간선 정보를 소멸시켜야 한다.
+
+void RecoverEdge(ALGraph * pg, int fromV, int toV, int weight)
+{
+  LInsert(&(pg->adjList[fromV]), toV);
+  LInsert(&(pg->adjList[toV]), fromV);
+  (pg->numE)++;
+}		// AddEdge 함수와 달리 간선의 가중치 정보를 별도로 저장하지 않는다. 
+
+// 한쪽 방향 간선의 소멸
+void RemoveWayEdge(ALGraph * pg, int fromV, int toV)
+{
+  int edge;
+  // 지워질 때까지 찾아가서 삭제
+  if(LFirst(&(pg->adjList[fromV]), &edge))
+  {
+    if(edge == toV)
+    {
+      LRemove(&(pg->adjList[fromV]));
+      return;
+    }
+    while(LNext(&(pg->adjList[fromV]), &edge))
+    {
+      if(edge == toV)
+      {
+        LRemove(&(pg->adjList[fromV]));
+        return;
+      }
+    }
+  }
+}
+
+// 인자로 전달된 두 정점이 연결되어 있다면 TRUE, 그렇지 않다면 FALSE
+int IsConnVertex(ALGraph * pg, int v1, int v2)
+{
+  Stack stack;
+  int visitV = v1;
+  int nextV;
+  
+  StackInit(&stack);
+  VisitVertex(pg, visitV);
+  SPush(&stack, visitV);
+  
+  while(LFirst(&(pg->adjList[visitV]), &nextV) == TRUE)
+  {
+    int visitFlag = FALSE;
+    
+    // 정점을 돌아다니는 도중 목표를 찾는다면 TRUE 반환
+    if(next == v2)
+    {
+      // 함수가 반환하기 전 초기화 진행
+      memset(pg->visitInfo, 0, sizeof(int)*pg->numV);
+      return TRUE;	// 목표를 찾음
+    }
+    
+    if(VisitVertex(pg, nextV) == TRUE)
+    {
+      SPush(&stack, visitV);
+      visitV = nextV;
+      visitFlag = TRUE;
+    }
+    else
+    {
+      while(LNext(&(pg->adjList[visitV]), &nextV) == TRUE)
+      {
+        // 정점을 돌아다니는 도중 목표를 찾는다면 TRUE 반환
+        if(nextV == v2)
+        {
+          // 함수가 반환하기 전 초기화 진행
+          memset(pf->visitInfo, 0, sizeof(int)*pg->numV);
+          return TRUE;		// 목표 찾음
+        }
+        if(VisitVertex(pg, nextV) == TRUE)
+        {
+          SPush(&stack, visitV);
+          visitV = nextV;
+          visitFlag = TRUE;
+          break;
+        }
+      }
+    }
+    if(visitFlag == FALSE)
+    {
+      if(SIsEmpty(&stack) == TRUE)
+        break;
+      else
+        visitV = SPop(&stack);
+    }
+  }
+  memset(pg->visitInfo, 0, sizeof(int)*pg->numV);
+  return FALSE;
+}
+```
+
+
 
 
 
