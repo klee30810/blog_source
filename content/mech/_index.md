@@ -1,6 +1,6 @@
 +++
 title = "Mechanical Engineering"
-menuTitle = "Mechanical Eng."
+menuTitle = "Mechanical Engineering"
 date = 2021-02-14T20:26:15+09:00
 weight = 2
 chapter = true
