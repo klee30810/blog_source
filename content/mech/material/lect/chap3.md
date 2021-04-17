@@ -38,8 +38,20 @@ LastModifierEmail : "klee30810@gmail.com"
 
 - elastomer : very long elongation, energy absorption (potential), rubber
 
-  → 재료의 temp 상승 : E, strength 감소 / 연신율 wmdrk
+  → 재료의 temp 상승 : E, strength 감소 / 연신율 증가
 
 - 소재에 저장되는 에너지 : 탄성변형까지!
+
 - Hooke's Law : \\(σ = E\varepsilon\\) ⇒ 탄성 영역에서만!
 
+- modulus of resilience : permanent damage 없이 E 흡수
+
+- modulus of toughness : fracture 까지 E 흡수
+
+- Poisson ratio : 줄어드는 폭의 역학적 비율, **탄성 영역까지만 적용됨**
+
+  $$ \varepsilon_{zz}=\frac{L-L_0}{L_0}, \varepsilon_{xx}=\frac{w-w_0}{w_0},\varepsilon_{yy}=\frac{D-D_0}{D_0}\\ \nu_{yy}=-\frac{\varepsilon_{yy}}{\varepsilon_{zz}},\quad \nu_{xx}=-\frac{\varepsilon_{xx}}{\varepsilon_{zz}} $$
+
+  → 금속 : 0.3, 고무 : 0.5
+
+- Shear stress
