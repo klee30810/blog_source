@@ -54,4 +54,30 @@ LastModifierEmail : "klee30810@gmail.com"
 
   → 금속 : 0.3, 고무 : 0.5
 
-- Shear stress
+- Shear stress $$\tau=Gγ,\quad G=\frac{E}{2(1+\nu)},\quad γ=\frac{\rho}{L}\phi $$
+
+##### Strain-stress relation
+
+- elastic에서만 적용, 등방성
+- 3D
+
+$$\left(\begin{array}{c}\sigma_{xx}\\ \sigma_{yy}\\\sigma_{zz}\\\sigma_{yz}\\\sigma_{xz}\\\sigma_{xy}\end{array}\right)=\frac{E}{(1+\nu)(1-2\nu)}\left(\begin{array}{c}1-\nu & \nu & \nu & 0 &0&0\\ &1-\nu&\nu&0&0&0\\&&1-\nu&0&0&0\\&&&\frac{(1-2\nu)}{2}&0&0\\&SYM&&&\frac{(1-2\nu)}{2}&0\\&&&&&\frac{(1-2\nu)}{2}\end{array}\right)\left(\begin{array}{c}\varepsilon_{xx}\\ \varepsilon_{yy}\\\varepsilon_{zz}\\2\varepsilon_{yz}\\2\varepsilon_{xz}\\2\varepsilon_{xy}\end{array}\right)$$
+
+$$\left(\begin{array}{c}\varepsilon_{xx}\\ \varepsilon_{yy}\\\varepsilon_{zz}\\\varepsilon_{yz}\\\varepsilon_{xz}\\\varepsilon_{xy}\end{array}\right)=\frac{1}{E}\left(\begin{array}{c}1 & -\nu & -\nu & 0 &0&0\\ &1&-\nu&0&0&0\\&&1&0&0&0\\&&&2(1+\nu)&0&0\\&SYM&&&2(1+\nu)&0\\&&&&&2(1+\nu)\end{array}\right)\left(\begin{array}{c}\sigma_{xx}\\ \sigma_{yy}\\\sigma_{zz}\\2\sigma_{yz}\\2\sigma_{xz}\\2\sigma_{xy}\end{array}\right)$$
+
+- 2D
+
+  - Plane Stress : 두께가 면적에 비해 너무 작으면 힘을 만들지 못함 \\(σ_{zz}=σ_{xz}=σ_{yz}=0\\)
+
+  $$\left(\begin{array}{c}\sigma_{xx}\\ \sigma_{yy}\\\sigma_{xy}\end{array}\right)=\frac{E}{1-\nu^2}\left(\begin{array}{c}1&\nu&0\\ &1&0\\SYM&&1-\nu\end{array}\right)\left(\begin{array}{c}\varepsilon_{xx}\\ \varepsilon_{yy}\\\varepsilon_{xy}\end{array}\right),\quad σ_{zz}=\frac{P}{A_z\rightarrow \infty}$$
+
+  - Plane strain : 면적에 비해 두께가 큼
+
+  $$\varepsilon_{zz}=\frac{u_z = 0}{L_0\rightarrow\infty} \left(\begin{array}{c}\sigma_{xx}\\ \sigma_{yy}\\\sigma_{xy}\end{array}\right)=\frac{E}{(1+\nu)(1-2\nu)}\left(\begin{array}{c}1-\nu&\nu&0\\ &1-\nu&0\\SYM&&1-2\nu\end{array}\right)\left(\begin{array}{c}\varepsilon_{xx}\\ \varepsilon_{yy}\\\varepsilon_{xy}\end{array}\right)$$
+
+  
+
+  
+
+
+
