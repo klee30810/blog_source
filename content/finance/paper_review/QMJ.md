@@ -8,7 +8,7 @@ draft: false
 katex: true
 markup: mmark
 tags: ["finance"]
-hidden: true
+hidden: false
 
 LastModifierDisplayName : "Kevin Lee"
 LastModifierEmail : "klee30810@gmail.com"
@@ -30,3 +30,7 @@ Asness, C. S., Frazzini, A., & Pedersen, L. H. (2019). Quality minus junk. *Revi
 $$ \frac{P}{B}=\frac{profitability \times payout-ratio}{required.return - growth} $$
 
 → scale prices by book values to make them more stationary over time and in the cross section
+
+
+
+cdcdc
