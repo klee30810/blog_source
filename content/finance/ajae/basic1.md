@@ -33,6 +33,10 @@ LastModifierEmail : "klee30810@gmail.com"
   - MiFID 2 규제 : 거래 수수료와 리서치 비용을 별도 구분하도록 강제
   - 데이터 과학 등의 대두로 인한 고도화, buy-side 자체 인력화
 
+  
+
+  {{< table "table table-striped" >}}
+
   |                | 뮤추얼 펀드           | 헤지 펀드                    | 프랍 트레이딩        |
   | -------------- | --------------------- | ---------------------------- | -------------------- |
   | 운용 자금 출처 | 다수의 개인           | 소수 부유층 (규제요건)       | 파트너 자신          |
@@ -44,7 +48,10 @@ LastModifierEmail : "klee30810@gmail.com"
   | 광고           | 공개 광고 자유        | 공개 광고 금지               | 필요 없음            |
   | 대표적 기관    | Vanguard, Fidelity 등 | Bridgewater, AQR, Elliott 등 | Jump Trading, DRW 등 |
 
+  {{</ table >}}
+
 - Hedge Fund의 종류 : Long/short Equity, Market Neutral, Merger Arbitrage, Convertible Arbitrage, Event-Driven, Credit, Fixed-Income Arbitrage, Global Macro, Short-Only, Quantitative
+
 - 사모 펀드 (Private Equity) : 헤지 펀드와 많은 면에서 유사, 금융 시장에서 매매하는 것이 아닌 회사에 직접 투자
 
 -------
@@ -128,6 +135,8 @@ LastModifierEmail : "klee30810@gmail.com"
 
 - 사모 펀드 투자 : PEX, PSP 사모펀드 ETF
 
+  {{< table "table table-striped" >}}
+
   |          Asset Class          |                    Benchmark                     | ETF  |
   | :---------------------------: | :----------------------------------------------: | :--: |
   |           US Equity           |                 S&P 500 TR Index                 |      |
@@ -140,6 +149,8 @@ LastModifierEmail : "klee30810@gmail.com"
   |       Natural Resources       |      S&P Global Natural Resources TR Index       | GNR  |
   | Hedge Funds & Managed Futures |          Credit Suisse Hedge Fund Index          |      |
   |        Global Equities        |               MSCI World TR Index                |      |
+
+  {{</table>}}
 
   - 기관이므로 매년 자산배분 공개 : https://www.harvard.edu/about-harvard/harvard-glance/endowment
 
