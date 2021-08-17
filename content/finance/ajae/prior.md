@@ -1,5 +1,5 @@
 ---
-title: "Prior"
+title: "Prior - Things you should know before investment"
 description: "Prior of Walstreet Ajae"
 menuTitle : "Prior"
 weight: 1
