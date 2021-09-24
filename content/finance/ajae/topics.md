@@ -1,10 +1,10 @@
 ---
-title: "Valuation"
-description: "Valuation study"
-menuTitle : "valuation"
-weight: 3
-date: 2021-08-17T23:03:39+09:00
-draft: false
+title: "Topics"
+description: ""
+menuTitle : ""
+weight: 1111
+date: 2021-08-23T06:31:51+09:00
+draft: true
 katex: true
 markup: mmark
 tags: []
