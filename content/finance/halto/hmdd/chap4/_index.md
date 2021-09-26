@@ -1,17 +1,17 @@
 +++
-title = "Chap4"
-menuTitle = "menu title"
+title = "New Investment Strategy"
+menuTitle = "New Strategy"
 date = 2021-09-26T09:10:45+09:00
-weight = 1000
+weight = 4
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>4. </b>"
 
 +++
 
-### Chapter X
+### Chapter 4
 
-# Some Chapter title
+# New Investment Strategy
 
-Lorem Ipsum.
+
 
 {{% children depth="1" showhidden="true" %}}
