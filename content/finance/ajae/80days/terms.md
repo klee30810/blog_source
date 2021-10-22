@@ -197,8 +197,10 @@ LastModifierEmail : "klee30810@gmail.com"
     - Condor
     - Collar
 
-  ## 8/14
+  
 
+  ## 8/14
+  
   - Treasury Yield Curve
     - 채권 만기 & 금리 그래프 : 보통 단기 금리가 더 낮다 → 우상향 그래프, 불확실성을 커버해야 하므로 만기가 길수록 연 이자율 자체가 높아야 정상
     - 가끔 역전 : 불황을 예상하는 가장 신뢰도 있는 치수
