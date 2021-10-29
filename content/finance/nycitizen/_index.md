@@ -1,17 +1,17 @@
 +++
-title = "Nycitizen"
-menuTitle = "menu title"
+title = "New York Citizen"
+menuTitle = "New York Citizen"
 date = 2021-10-29T16:32:42+09:00
-weight = 1000
+weight = 4
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>4. </b>"
 
 +++
 
-### Chapter X
+### Chapter 4
 
-# Some Chapter title
+# New York Citizen
 
-Lorem Ipsum.
+Review of 뉴욕주민의 진짜 미국식 주식투자 written by 뉴욕주민
 
 {{% children depth="1" showhidden="true" %}}
