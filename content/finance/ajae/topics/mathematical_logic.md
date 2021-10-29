@@ -2,7 +2,7 @@
 title: "Mathematical logic"
 description: "Mathematical Logic thinking with Biden tax case"
 menuTitle : "Math Logic"
-weight: 1
+weight: 2
 date: 2021-10-22T14:06:03+09:00
 draft: false
 katex: true
