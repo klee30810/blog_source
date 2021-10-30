@@ -2,7 +2,7 @@
 title: "Valuation"
 description: "Valuation study"
 menuTitle : "valuation"
-weight: 3
+weight: 4
 date: 2021-08-17T23:03:39+09:00
 draft: false
 katex: true
