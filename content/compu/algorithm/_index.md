@@ -1,16 +1,17 @@
----
-title: "Algorithm"
-description: ""
-menuTitle : ""
-weight: 1111
-date: 2021-11-09T23:15:14+09:00
-draft: true
-katex: true
-markup: mmark
-tags: []
-hidden: true
++++
+title = "Algorithm"
+menuTitle = "Algorithm"
+date = 2021-11-10T00:00:54+09:00
+weight = 3
+chapter = true
+pre = "<b>3. </b>"
 
-LastModifierDisplayName : "Kevin Lee"
-LastModifierEmail : "klee30810@gmail.com"
----
++++
 
+### Chapter 3
+
+# Algorithm Studies
+
+Lorem Ipsum.
+
+{{% children depth="1" showhidden="true" %}}
