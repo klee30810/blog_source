@@ -119,3 +119,137 @@ int binomial(int n, int k)
 }
 ```
 
+
+
+## 예시 : 행렬 경로 문제
+
+---
+
+- 정수들이 저장된 nxn행렬의 좌상단에서 우하단까지 이동한다. 단, 오른쪽이나 아래쪽 방향으로만 이동할 수 있다.
+- 방문한 칸에 있는 정수들의 합이 최소화 되도록 하라
+
+- 동적 계획법 : **순환식을 세우고** 계산하는 것, general case와 exception case를 완전하게 구하라
+
+- Key observation : (i,j)에 도달하기 위해서는 (i,j-1) 혹은 (i-1, j)를 거쳐야 한다. 또한 (i,j-1) 혹은 (i-1, j)까지는 최선의 방법으로 이동해야 한다.
+  $$
+  L[i,j]:(1,1)에서\ (i,j)까지 이르는 최소 합\\
+  L[i,j]=\begin{cases} m_{ij} & if\ i=1\ \&j=1;\\L[i-1,j]+m_{ij}\ & if\ j=1; \\ L[i,j-1]+m_{ij} & if\ i=1; \\ min(L[i-1, j],L[i,j-1])+m_{ij} & otherwise.\end{cases}
+  $$
+
+  - i=1 : 맨 아래 줄일 경우, 그냥 왼쪽을 구하기
+  - j=1 : 맨 오른쪽 일 경우, 그냥 위쪽을 구하기
+
+  ```c
+  int mat(int i, int j)  // recursive algorithm, 모든 경우 계산하므로 계산량이 너무 많음
+  {
+  	if(i==1 && j==1)
+  		return m[i][j];
+  	else if (i==1)
+  		return mat(1,j-1) + m[i][j];
+  	else if (j==1)
+  		return mat(i-1, 1) + m[i][j];
+  	else
+  		return Math.min(mat(i-1,j), mat(i,j-1))+m[i,j]
+  }
+  
+  int mat(int i, int j)  // Memoization
+  {
+    if (L[i][j] != -1) return L[i][j];
+  	if(i==1 && j==1)
+  		return L[i][j] = m[i][j];
+  	else if (i==1)
+  		return L[i][j] = mat(1,j-1) + m[i][j];
+  	else if (j==1)
+  		return L[i][j] = mat(i-1, 1) + m[i][j];
+  	else
+  		return L[i][j] = Math.min(mat(i-1,j), mat(i,j-1))+m[i,j]
+     return L[i][j];
+  }
+  ```
+
+- 해당 지점의 위나 왼쪽먼저 계산하도록 순서가 되면 필요한 값이 항상 먼저 계산됨
+
+  ```c
+  int mat() // bottom-up
+  {
+    for (int i=1; i<=n; i++)
+    {
+      for (int j=1; j<=n; j++)
+      {
+        if (i==1 && j==1)
+          L[i][j] = m[1][1];
+        else if (i==1)
+          L[i][j] = m[i][j] + L[i][j-1];
+        else if (j==1)
+          L[i][j] = m[i][j] + L[i][j-1];
+        else
+          L[i][j] = m[i][j] + Math.min(L[i-1][j], L[i][j-1]);
+      }
+    }
+    return L[n][n];
+  }
+  
+  // initialize L with L[0][j]=L[i][0]=inf. for all i & j
+  int mat()
+  {
+    for (int i=1; i<=n; i++)
+    {
+      for (int j=1; j<=n; j++)
+      {
+        if (i==1 && j==1)
+          L[i][j] = m[1][1];
+        else
+          L[i][j] = m[i][j] + Math.min(L[i-1][j], L[i][j-1]);
+      }
+    }
+    return L[n][n];
+  }
+  ```
+
+- 경로 구하기 : 경로 배열 저장, 왼쪽이나 위쪽의 것 중에 작은 것에 대한 방향 저장
+
+  ```c
+  // initialize L with L[0][j]=L[i][0]=inf. for all i & j
+  int mat()
+  {
+    for (int i=1; i<=n; i++)
+    {
+      for (int j=1; j<=n; j++)
+      {
+        if (i==1 && j==1)
+          L[i][j] = m[1][1];
+        	P[i][j] = '-';
+        else
+          if (L[i-1][j] < L[i][j-1])
+          {
+          	L[i][j] = m[i][j] + (L[i-1][j]);  
+            P[i][j] = '->';
+          }
+        	else
+          {
+            L[i][j] = m[i][j] + L[i][j-1];
+            P[i][j] = '<-'
+          }
+      }
+    }
+    return L[n][n];
+  }
+  
+  // 경로를 출력
+  void printPathRecursive(int i, int j)
+  {
+  	if(P[i][j] == '-')
+      print(i + ' ' + j);
+    else 
+    {
+      if (P[i][j]=='<-')
+        printPathRecursive(i,j-1);
+      else
+        printPathRecursive(i-1, j);
+      print(i+' '+j);
+    }
+  }
+  ```
+
+  
+
