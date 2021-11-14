@@ -2,16 +2,16 @@
 title = "Prob_theory"
 menuTitle = "menu title"
 date = 2021-11-14T22:07:14+09:00
-weight = 1000
+weight = 2
 chapter = true
 pre = "<b>X. </b>"
 
 +++
 
-### Chapter X
+### Chapter 2
 
-# Some Chapter title
+# Probability Theory
 
-Lorem Ipsum.
+Probability Theory taught by Hyun Joo, Kim in HGU
 
 {{% children depth="1" showhidden="true" %}}
