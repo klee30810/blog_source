@@ -78,13 +78,44 @@ $$ value\ =\ Σ^{t=n}_{t=1}\frac{CF_t}{(1+r)^t}$$ r : reflecting the riskiness o
    - Using Comparables - compare how a firm is valued with how similar firms are priced by the market
      - we have to either explicitly or implicitly control for differences across firms on growth, risk and cash flow measures. In practice, controlling for these variables can range from the naive (using industry averages) to the sophisticated (multivariate regression models where the relevant variables are identified and we control for differences.)
 2. Cross Sectional versus Time Series Comparisons
-   - 
+   - Cross Sectional Comparisons
+     - The conclusions can vary depending upon our assumptions about the firm being valued and the comparable firms
+     - you cannot compare firms without making assumptions about their fundamentals.
+   - Comparisons across time
+     - **have to assume that your firm has not changed its fundamentals over time.**
+     - Comparing multiples across time can also be complicated by changes in the interest rates over time and the behavior of the overall market
+
+### Applicability of multiples & limitations
+
+- Given that no two firms are exactly similar in terms of risk and growth, the definition of 'comparable' firms is a subjective one. Consequently, a biased analyst can choose a group of comparable firms to confirm his or her biases about a firm's value.
+- it builds in errors (over valuation or under valuation) that the market might be making in valuing these firms
 
 
 
+## 3. Contingent Claim Valuation
 
+---
 
+- the value of an asset may not be greater than the present value of expected cash flows if the cashflows are contingent on the occurrence or non-occurrence of an event.
 
+### Basis for Approach
+
+![image](/images/finance/damodaran/investment_valuation/chap2/1.png)
+
+- Option variables : the current value, the variance in value of the underlying asset, the strike price, the time to expiration of the option and the riskless interest rate.
+
+- The fundamental premise behind the use of option pricing models is that discounted cash flow models tend to understate the value of assets that provide payoffs that are contingent on the occurrence of an event
+  - if there exists undeveloped oil reserve..
+    1. The oil company will develop this reserve if oil prices go up and will not if oil prices decline.
+    2. The oil company will develop this reserve if development costs go down because of technological improvement and will not if development costs remain high.
+
+- When we use option pricing models to value assets such as patents and undeveloped natural resource reserves, we are assuming that markets are sophisticated enough to recognize such options and to incorporate them into the market price
+
+### Applicability of Option Pricing Models & Limitation
+
+- Equity : call option on the value of the underlying firm, with the face value of debt representing the strike price and term of the debt measuring the life of the option
+- Patent : call option on a product, with the investment outlay needed to get the project going representing the strike price and the patent life being the time to expiration of the option.
+- When the underlying asset is not traded, the inputs for the value of the underlying asset and the variance in that value cannot be extracted from financial markets and have to be estimated. Thus the final values obtained from these applications of option pricing models have much more estimation error associated with them than the values obtained in their more standard applications (to value short term traded options)
 
 
 
