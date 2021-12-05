@@ -50,7 +50,7 @@ LastModifierEmail : "klee30810@gmail.com"
 - Quantitative variable : 변수가 숫자
   - Discrete : only certain values with no intermidiate values
   - Continuous : value over a certain internal values
-- Qualitative variable : 변수가 글자
+- Qualitative variable : 변수가 글자 
 - Sampling error : differences between sample survey's result & whole population survey's 
 
 

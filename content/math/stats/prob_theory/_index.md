@@ -1,10 +1,10 @@
 +++
 title = "Prob_theory"
-menuTitle = "menu title"
+menuTitle = "Prob Theory"
 date = 2021-11-14T22:07:14+09:00
 weight = 2
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>2. </b>"
 
 +++
 
