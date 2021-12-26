@@ -42,9 +42,7 @@ LastModifierEmail : "klee30810@gmail.com"
 
 ### Income Statement
 
-- provides information on the revenues and expenses of the firm, and the resulting income made by the firm, during a
-
-  period
+- provides information on the revenues and expenses of the firm, and the resulting income made by the firm, during a period
 
 ![image](/images/finance/damodaran/investment_valuation/chap3/2.png)
 
@@ -159,13 +157,121 @@ LastModifierEmail : "klee30810@gmail.com"
 
   3. Deferred Taxes
 
-     - 
+     - the firm's earnings in future periods will be greater as the firm is given credit for the deferred tax
+
+- Preferred Stock
+
+  - preferred stock is viewed in accounting as a hybrid security, sharing some characteristics with equity and some with debt
+
+- Equity
+
+  - the original proceeds received by the firm, augmented by any earnings made since, reduced by any dividends paid out during the period
 
 
 
+## Measuring Earnings & Profitability
+
+---
+
+- How profitable is a firm? What did it earn on the assets that it invested in?
+
+### Accounting Principles Underlying Measurement of Earnings and Profitabilit
+
+1. accrual accounting : the revenue from selling a good or service is recognized in the period in which the good is sold or the service is performed (in whole or substantially). A corresponding effort is made on the expense side to match7 expenses to revenues.
+2. cash accounting : revenues are recognized when payment is received and expenses are recorded when they are paid
+   - operating expense : provide benefits only for the current period
+   - financing expense : arising from the non-equity financing used to raise capital for the business
+   - capital expense : expenses that are expected to generate benefits over multiple periods
+
+### Measuring Accounting Earnings & Profitability
+
+- GAAP require the recognition of revenues when the service for which the firm is getting paid has been performed in full or substantially and for which it has received in return either cash or a receivable that is both observable and measurable. Expenses linked directly to the production of revenues (like labor and materials) are recognized in the same period in which revenues are recognized.
+
+- operating expenses should reflect only those expenses that **create revenues in the**
+
+  **current period**
+
+  1. depreciation and amortization : computed on the original historical cost often bears little resemblance to the actual economical depreciation
+  2. research and development expenses
+
+- important that we know how much of these earnings **come from the ongoing operations** of the firm, and how much can be **attributed to unusual or extraordinary events** : Unusual or Infrequent items, Extraordinary items, Losses associated with discontinued operations, Gains or losses associated with accounting charges
+
+  
+
+## Measures of Profitability
+
+---
+
+- One examines the **profitability relative to the capital employed** to get a rate of return on investment. This can be done either from the viewpoint of just the equity investors, or by looking at the entire firm. Another examines p**rofitability relative to sales,** by estimating a profit margin.
+
+### 1. Return on Asset & Return on Capital
+
+- ROA : operating efficiency in generating profits from its assets, prior to the effects of financing
+
+  $$ ROA = \frac{EBIT(1-tax\ rate)}{total\ assets} = \frac{Net\ income+Interest\ expense(1-tax\ rate)}{total\ assets}\\pre-tax\ ROA = \frac{EBIT}{total\ assets}$$
+
+  - pre-tax : useful if the firm or division is being evaluated for purchase by an acquirer with a different tax rate or structure
+
+- ROC : When a substantial portion of the liabilities is either current (such as accounts payable) or non-interest bearing
+
+  $$After-tax\ ROC = \frac{EBIT(1-t)}{BV\ of\ Debt+BV\ of\ Equity}=\frac{EBIT(1-t)}{Sales}\times\frac{Sales}{BV\ of\ capital} = After-tax\ Operating\ Margin \times Capital\ Turnover\ Ratio \\ Pre-Tax\ ROC = \frac{EBIT(1-t)}{BV\ of\ Debt+BV\ of\ Equity} = Pre-tax\ Operating\ Margin \times Capital\ Turnover\ Ratio $$
+
+  - a high ROC by either increasing its profit margin or more efficiently utilizing its capital to increase sales.
+
+### 2. Return on Equity
+
+- ROE : profitability from **the perspective of the equity investor** by relating profits to the equity investor (net profit after taxes and interest expenses) to the book value of the equity investment.
+
+  $$ ROE = \frac{Net\ Income}{BV\ of\ Common\ Equity} $$
+
+  - Net income should be estimated after preferred dividends
+
+- Determinants of ROE
+
+  $$ ROE = ROC + \frac{BV\ of\ Debt}{BV\ of\ Equity}(ROC-\frac{Interest\ exp\ on\ Debt}{BV\ of\ Debt}(1-tax\ rate))=ROC + benefit\ of\ financial\ leverage$$
+
+→ derivation : $$ROC + \frac{D}{E}(ROC-i(1-t))=\frac{NI+IE(1-t)}{D+E}+\frac{D}{E}(\frac{NI+IE(1-t)}{D+E}-\frac{IE(1-t)}{D})=\frac{NI+IE(1-t)}{D+E}(1+\frac{D}{E})-\frac{IE(1-t)}{E}=\frac{NI}{E}+\frac{IE(1-t)}{E}-\frac{IE(1-t)}{E}=\frac{NI}{E}=ROE $$
 
 
 
+## Measuring Risk
+
+---
+
+- Accounting statements do not really claim to measure or quantify risk in a systematic way, other than to **provide footnotes and disclosures** where there might be risk embedded in the firm
+
+### Accounting Principles Underlying Risk Measurement
+
+- risk of default : fixed obligation (interest) will not be met. The broader equity notion of risk, which measures the variance of actual returns around expected returns, does not seem to receive much attention → an all-equity-financed firm with positive earnings and few or no fixed obligations will generally emerge as a low-risk firm from an accounting standpoin
+- static view of risk : capacity of a firm at a point in time to meet its obligations
+
+### Accounting Measures of Risk
+
+1. disclosures about potential obligations or losses in values that show up as footnotes on balance sheets
+2. the ratios that are designed to measure both liquidity and default risk.
+
+### Financial Ratios - Profitability, risk & leverage
+
+1. Short-Term Liquidity Risk
+
+   $$ current\ ratio=\frac{current\ assets}{current\ liablities}$$
+
+   - A current ratio below one, for instance, would indicate that the firm has more obligations coming due in the next year than assets it can expect to turn to cash.
+   - a trade-off here between minimizing liquidity risk and tying up more and more cash in net working capital
+   - very high current ratio is indicative of an unhealthy firm, which is having problems reducing its inventory
+
+   $$ quick\ ratio=\frac{cash+marketable\ securities}{current\ liabilities}$$
+
+   $$Account\ receivable\ turnover = \frac{sales}{average\ accounts\ receivable} \\ inventory\ turnover = \frac{cost\ of\ goods\ sold}{average\ inventory} \\ accounts\ payable\ turnover=\frac{purchases}{average\ accounts\ payable}$$
+
+   - the efficiency of working capital management by looking at the relationship of accounts receivable and inventory to sales and to the cost of goods sold.
+   - measuring the speed with which the firm turns accounts receivable into cash or inventory into sales
+
+   $$required\ financing\ period=days\ of\ outstanding + days\ inventory\ held+days\ payable\ outstanding $$
+
+   - The greater the financing period for a firm, the greater is its short-term liquidity risk
+
+2. Long-term Solvency & default risk
 
 
 
