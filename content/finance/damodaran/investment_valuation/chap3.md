@@ -273,17 +273,41 @@ LastModifierEmail : "klee30810@gmail.com"
 
 2. Long-term Solvency & default risk
 
+   a) Coverage Ratio
 
+   - to measure long term solvency try to relate profitability to the level of debt payments
 
+   $$ Interest\ Coverage\ Ratio = \frac{EBIT}{Interest\ expense} $$ 
 
+   - higher coverage ratio → more secure for company to make interest payment
+   - EBIT can drop significantly if the economy enters a recession
 
+   $$ Fixed\ Charges\ Coverage\ Ratio=\frac{EBIT+Fixed\ Charges}{Fixed\ Charges} \\ Cash\ Fixed\ Charges\ Coverage\ Ratio=\frac{EBITDA}{Cash\ Fixed\ Charges}$$
 
+   - those ratios do not consider **capital expenditure**, a cashflow that discretionary in the very short term, but not in the long tern if the firm wants to maintain growth
 
+   $$Operating\ Cash\ flow\ to\ Capital\ Expenditure = \frac{cash\ flows\ from\ operation}{capital\ expenditure} \\ cash\ flow\ from\ operation = EBIT(1-tax\ rate)-\triangle Working\ capital $$
 
+   
 
+   b) Debt Ratio
 
+   - to examine whether it can pay back the principal on outstanding debt
 
+   $$ Debt\ to\ Capital\ Ratio = \frac{debt}{debt + equity} \\ Debt\ to\ equity\ ratio=\frac{debt}{equity} \\ Debt/equity\ ratio = \frac{debt/capital\ ratio}{1-debt/capital\ ratio}$$
 
+   - it is better to keep it separate and to compute the ratio of preferred stock to capital
 
+   c) variants on debt ratio
 
+   - rationale that short-term debt is transitory and will not affect the long-term solvency
 
+     $$long-term\ debt\ to\ capital\ ratio=\frac{long\ term\ debt}{long\ term\ debt + equity} \\ long-term\ debt\ to \ equity\ ratio=\frac{long-term\ debt}{equity}$$ 
+
+   - the willingness of many firms to use short-term financing to fund long-term projects → can be a misleading picture of the firm's financial leverage risk
+
+     $$market\ value\ debt\ to\ capital\ ratio=\frac{MV\ of\ debt}{MV\ of\ debt+MV\ of\ equity} \\market\ value\ debt\ to\ equity\ ratio=\frac{MV\ of\ debt}{MV\ of\ equity}$$
+
+     → market value의 pros & cons 존재
+
+     
